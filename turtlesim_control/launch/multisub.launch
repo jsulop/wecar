@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- publisher node -->
+    <node pkg="turtlesim_control" type="turtlesim_linear.py" name="turtlesim_linear" />
+
+    <!-- subscriber node -->
+    <node pkg="turtlesim_control" type="turtlesim_rotate.py" name="turtlesim_rotate" />
+
+    <!-- visualisation with rat -->
+    <node name="rqt_gui" pkg="rqt_gui" type="rqt_gui" />
+    
+</launch>
